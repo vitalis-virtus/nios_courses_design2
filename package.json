@@ -1,0 +1,29 @@
+{
+  "name": "parcel-project-template",
+  "version": "1.1.0",
+  "description": "",
+  "main": "index.js",
+  "homepage": "https://vitalis-virtus.github.io/nios_courses_design2",
+  "scripts": {
+    "dev": "parcel src/*.html",
+    "build": "parcel build src/*.html --public-url /nios_courses_design2/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vitalis-virtus/nios_courses_design2.git"
+  },
+  "keywords": [],
+  "author": "Vitalii Shaiuk <vshayuk@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vitalis-virtus/nios_courses_design2/issues"
+  },
+  "devDependencies": {
+    "deasync": "^0.1.26",
+    "parcel-bundler": "^1.12.5",
+    "parcel-plugin-handlebars-precompile": "^1.0.2",
+    "parcel-plugin-nuke-dist": "^1.0.1",
+    "posthtml-include": "^1.6.2",
+    "sass": "^1.32.8"
+  }
+}
