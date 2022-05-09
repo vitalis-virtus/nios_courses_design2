@@ -1,0 +1,100 @@
+.works {
+  &-wrapper {
+    color: $primary-white-text-color;
+  }
+  &-header {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  &-list {
+    display: flex;
+  }
+
+  &-list-item-inner-thumb {
+    padding: 30px 40px 40px 30px;
+    border: none;
+    border-radius: 20px;
+    background-color: $list-item-bgc-color;
+  }
+
+  &-list-item {
+    max-width: 495px;
+  }
+
+  &-list-item:not(:last-child) {
+    margin-right: 38px;
+  }
+
+  &-svg-thumb-1 {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    padding: 25px;
+    margin-bottom: 55px;
+  }
+
+  &-svg-thumb-2 {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 18px;
+    border-radius: 10px;
+  }
+
+  &-svg {
+    width: 35px;
+    height: 35px;
+  }
+  &-list h3 {
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 42px;
+    margin-bottom: 10px;
+  }
+
+  &-list span {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+    display: inline-block;
+    opacity: 0.3;
+  }
+  &-list p {
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 30px;
+  }
+}
+
+.svg-ecosystem-bgc {
+  &-1 {
+    background-color: #ea0b1e25;
+  }
+  &-2 {
+    background-color: $primary-red-color;
+  }
+}
+
+.svg-options-bgc {
+  &-1 {
+    background-color: #ff942925;
+  }
+  &-2 {
+    background-color: #ff9429;
+  }
+}
+
+.svg-reshaping-bgc {
+  &-1 {
+    background-color: #0095f231;
+  }
+  &-2 {
+    background-color: #0096f2;
+  }
+}

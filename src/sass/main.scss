@@ -13,3 +13,7 @@
 @import './utils/_base-noralize';
 
 //partials
+@import './partials/header'; //стилі для хедера в main-hero
+@import './partials/main-hero';
+@import './partials/ticker-line'; //біжучий рядок
+@import './partials/how-it-works';
