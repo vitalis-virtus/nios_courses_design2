@@ -1,0 +1,105 @@
+.hero {
+  &-bg {
+    background-image: url('/images/main-hero-bg-min.png');
+    background-size: cover;
+    padding-bottom: 140px;
+  }
+
+  &-wrapper {
+    display: flex;
+  }
+
+  &-content {
+    margin-right: 450px;
+  }
+
+  &-content-header {
+    font-weight: 800;
+    font-size: 80px;
+    line-height: 90px;
+    color: $primary-white-text-color;
+    position: relative;
+    margin-bottom: 75px;
+  }
+
+  &-content-header span:first-child {
+    color: $primary-red-color;
+  }
+  &-content-header::after {
+    content: 'it’s a hybrid of Shiba and Spiderman.... but';
+    color: $pseudoelent-text-color;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+    display: block;
+    position: absolute;
+    bottom: -40px;
+  }
+
+  &-content-description {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    color: $primary-grey-text-color;
+    margin-bottom: 46px;
+  }
+
+  &-content-navigation-buttons {
+    display: flex;
+  }
+
+  &-content-navigation-buttons .join-btn {
+    background-color: $primary-red-color;
+    color: $primary-white-text-color;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    border: none;
+    padding: 25px 54px;
+    border-radius: 10px;
+    margin-right: 25px;
+  }
+
+  &-content-navigation-buttons .more-btn {
+    background-color: #ffffff0d;
+    color: $primary-white-text-color;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+    border: none;
+    padding: 27px 54px;
+    border-radius: 10px;
+  }
+
+  &-image {
+    margin-right: 118px;
+    margin-top: 20px;
+    width: 592px;
+    height: 546px;
+  }
+}
+
+.contact-adress {
+  position: relative;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 30px;
+  color: $primary-white-text-color;
+  opacity: 0.4;
+  border: 1px solid #ffffff17;
+  border-radius: 10px;
+  padding: 32px 35px 13px 30px;
+  margin-top: 20px;
+
+  &::before {
+    content: 'Contract address:';
+    position: absolute;
+    top: 14px;
+    left: 30px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: $primary-white-text-color;
+    opacity: 0.5;
+  }
+}

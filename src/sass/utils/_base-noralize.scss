@@ -1,6 +1,5 @@
 body {
-  margin: 0 auto;
-  font-family: 'Source Sans';
+  font-family: 'Source Sans Pro';
   background-color: $primary-background-color;
 }
 
@@ -43,4 +42,8 @@ p {
 input:focus,
 button:focus {
   outline: none;
+}
+
+button {
+  cursor: pointer;
 }

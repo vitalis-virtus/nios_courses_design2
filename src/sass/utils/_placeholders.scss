@@ -1,0 +1,12 @@
+%pseudo-circle-element {
+  content: '';
+  position: absolute;
+  background: radial-gradient(
+    34.94% 34.94% at 50% 50%,
+    $gradient-color-1 0%,
+    $gradient-color-1 100%
+  );
+  opacity: 0.4;
+  filter: blur(100px);
+  border-radius: 1000px;
+}
