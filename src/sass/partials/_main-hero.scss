@@ -19,21 +19,19 @@
     line-height: 90px;
     color: $primary-white-text-color;
     position: relative;
-    margin-bottom: 75px;
+    margin-bottom: 40px;
   }
 
   &-content-header span:first-child {
     color: $primary-red-color;
   }
-  &-content-header::after {
-    content: 'it’s a hybrid of Shiba and Spiderman.... but';
-    color: $pseudoelent-text-color;
+
+  &-content-header p {
     font-weight: 500;
     font-size: 25px;
     line-height: 30px;
-    display: block;
-    position: absolute;
-    bottom: -40px;
+    margin-top: 5px;
+    color: $pseudoelent-text-color;
   }
 
   &-content-description {
@@ -58,6 +56,11 @@
     padding: 25px 54px;
     border-radius: 10px;
     margin-right: 25px;
+    transition: 250ms ease-in-out all;
+  }
+
+  &-content-navigation-buttons .join-btn:hover {
+    background-color: $primary-red-hover-color;
   }
 
   &-content-navigation-buttons .more-btn {
@@ -69,6 +72,11 @@
     border: none;
     padding: 27px 54px;
     border-radius: 10px;
+    transition: 250ms ease-in-out all;
+  }
+
+  &-content-navigation-buttons .more-btn:hover {
+    background-color: rgba(255, 255, 255, 0.288);
   }
 
   &-image {
@@ -77,29 +85,29 @@
     width: 592px;
     height: 546px;
   }
-}
 
-.contact-adress {
-  position: relative;
-  font-weight: 400;
-  font-size: 25px;
-  line-height: 30px;
-  color: $primary-white-text-color;
-  opacity: 0.4;
-  border: 1px solid #ffffff17;
-  border-radius: 10px;
-  padding: 32px 35px 13px 30px;
-  margin-top: 20px;
+  &-contact-adress {
+    border: 1px solid #ffffff17;
+    border-radius: 10px;
+    padding: 14px 35px 13px 30px;
+    margin-top: 20px;
 
-  &::before {
-    content: 'Contract address:';
-    position: absolute;
-    top: 14px;
-    left: 30px;
+  }
+
+  &-contact-adress p {
+    position: relative;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+    color: $primary-white-text-color;
+    opacity: 0.4;
+  }
+
+  &-contact-adress h4 {
     font-weight: 500;
     font-size: 15px;
     line-height: 18px;
     color: $primary-white-text-color;
-    opacity: 0.5;
+    opacity: 0.3;
   }
 }

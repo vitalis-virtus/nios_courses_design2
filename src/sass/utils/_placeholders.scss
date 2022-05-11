@@ -1,16 +1,4 @@
-%pseudo-circle-element {
-  content: '';
-  position: absolute;
-  background: radial-gradient(
-    34.94% 34.94% at 50% 50%,
-    $gradient-color-1 0%,
-    $gradient-color-1 100%
-  );
-  opacity: 0.4;
-  filter: blur(100px);
-  border-radius: 1000px;
-}
-
+//стилі для точок по центру екрана в секціі rodmap
 %pseudo-red-dot-disabled {
   content: '';
   width: 12px;
@@ -31,4 +19,13 @@
   background-color: #ffffff;
   position: absolute;
   top: 50%;
+}
+
+//основний стиль для текста заголвків в секціях
+%section-header-styles {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 60px;
+  color: $primary-white-text-color;
+  text-align: center;
 }

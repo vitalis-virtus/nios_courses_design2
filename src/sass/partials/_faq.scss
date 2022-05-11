@@ -5,12 +5,8 @@
     padding-bottom: 150px;
   }
   &-wrapper h2 {
-    // color: $primary-white-text-color;
-    font-weight: 700;
-    font-size: 50px;
-    line-height: 60px;
+    @extend %section-header-styles;
     margin-bottom: 48px;
-    text-align: center;
   }
 
   &-list {
