@@ -1,0 +1,172 @@
+.find-out {
+  &-wrapper {
+    padding-top: 50px;
+    padding-bottom: 293px;
+    position: relative;
+  }
+
+  &-companies {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 116px;
+    z-index: 3;
+  }
+
+  &-company {
+    opacity: 0.1;
+    transition: 250ms ease-in-out all;
+  }
+
+  &-company:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  &-company img {
+    display: block;
+    height: 50px;
+    width: auto;
+  }
+
+  &-company:hover {
+    opacity: 1;
+  }
+
+  &-wrapper h2 {
+    text-align: center;
+    color: $primary-white-text-color;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 42px;
+    position: relative;
+    width: 552px;
+    margin: 0 auto 13px;
+  }
+
+  &-wrapper h2::after {
+    content: '';
+    width: 40px;
+    height: 40px;
+    display: block;
+    background-image: url('/images/earth-pseudo-min.png');
+    background-size: 104%;
+    border-radius: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 16%;
+  }
+
+  &-shiba {
+    display: block;
+    width: 193px;
+    height: 180px;
+    margin: 0 auto 15px;
+    position: relative;
+  }
+
+  &-wrapper h2::before {
+    content: '';
+    width: 950px;
+    height: 950px;
+    display: block;
+    background-image: url('/images/find-out-sircles-pseudo-min.png');
+    background-size: cover;
+    position: absolute;
+    top: -246px;
+    left: -199px;
+    z-index: -2;
+  }
+
+  &-button::before {
+    content: '';
+    width: 924px;
+    height: 950px;
+    display: block;
+    background-image: url('/images/find-out-web-pseudo-min.png');
+    background-size: cover;
+    position: absolute;
+    top: -580px;
+    left: -354px;
+    z-index: -2;
+  }
+
+  &-button::after {
+    content: '';
+    width: 350px;
+    height: 350px;
+    display: block;
+    background-image: url('/images/earth-min.png');
+    position: absolute;
+    bottom: 0;
+    left: -68px;
+    z-index: -2;
+  }
+
+  &-button {
+    display: block;
+    text-align: center;
+    background-color: $primary-red-color;
+    border: none;
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 10px 45px 15px;
+    transition: 250ms ease-in-out all;
+    position: relative;
+  }
+
+  &-button:hover {
+    background-color: $primary-red-hover-color;
+  }
+
+  &-button p {
+    color: $primary-white-text-color;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 26px;
+    width: 125px;
+  }
+
+  &-svg {
+    width: 25px;
+    height: 25px;
+  }
+
+  &-svg-thumb-1 {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    padding: 29px;
+    margin: 0;
+  }
+
+  &-svg-thumb-2 {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    margin: 0;
+  }
+}
+
+#svg {
+  &-ecosystem {
+    position: absolute;
+    top: 377px;
+    left: 536px;
+  }
+
+  &-options {
+    position: absolute;
+    top: 706px;
+    right: 684px;
+  }
+
+  &-defi {
+    position: absolute;
+    right: 536px;
+    top: 143px;
+  }
+}

@@ -8,11 +8,7 @@
     padding-bottom: 130px;
   }
   &-wrapper h2 {
-    color: $primary-white-text-color;
-    text-align: center;
-    font-weight: 700;
-    font-size: 50px;
-    line-height: 60px;
+    @extend %section-header-styles;
     margin-bottom: 66px;
   }
 
