@@ -1,0 +1,88 @@
+.team-partners-bgc {
+  background-color: $team-partners-section-background-color;
+}
+
+.team {
+  &-wrapper {
+    text-align: center;
+    margin-bottom: 80px;
+  }
+
+  &-wrapper h2 {
+    color: $primary-white-text-color;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    margin-bottom: 60px;
+  }
+
+  &-slider {
+    text-align: center;
+  }
+
+  &-list {
+    color: $primary-white-text-color;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+
+  &-list img {
+    border-radius: 30px;
+    margin-bottom: 20px;
+  }
+
+  &-list h4 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  &-list p {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 26px;
+    opacity: 0.6;
+  }
+
+  &-slider-nav button {
+    background-color: #a2a7b4;
+    width: 10px;
+    height: 10px;
+    border: none;
+  }
+
+  &-slider-nav button:not(:last-child) {
+    margin-right: 15px;
+  }
+
+  &-slider-nav .slider-active-button {
+    background-color: #ff0000;
+  }
+}
+
+.partners {
+  &-wrapper h2 {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    color: $primary-white-text-color;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  &-list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-list li {
+      border-radius:50px ;
+      transition: 150ms ease-in all;
+  }
+
+  &-list li:hover {
+    box-shadow: 0px 5px 16px 20px rgba(255, 255, 255, 0.2);
+
+  }
+}

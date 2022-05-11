@@ -1,0 +1,156 @@
+.tokenomics {
+  &-bgc {
+    background-color: $tokenomics-section-bgc;
+  }
+
+  &-wrapper {
+    padding-top: 70px;
+    padding-bottom: 130px;
+  }
+  &-wrapper h2 {
+    color: $primary-white-text-color;
+    text-align: center;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    margin-bottom: 66px;
+  }
+
+  &-statistic {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $primary-white-text-color;
+  }
+
+  &-statistic li {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    width: 444px;
+    height: 140px;
+    padding: 35px 50px 20px 30px;
+  }
+
+  &-statistic li:not(:last-child) {
+    margin-bottom: 25px;
+  }
+  &-statistic h3 {
+    font-weight: 600;
+    font-size: 27px;
+    line-height: 32px;
+    margin-bottom: 5px;
+  }
+
+  &-statistic p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    opacity: 0.3;
+  }
+
+  &-diagram {
+    position: relative;
+    z-index: 1;
+    border-radius: 100%;
+    transition: 200ms ease-in-out all;
+  }
+
+  &-diagram:hover {
+    box-shadow: 2px 40px 30px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  &-diagram::before {
+    content: '';
+    width: 458px;
+    height: 458px;
+    border-radius: 100%;
+    background-color: $tokenomics-section-bgc;
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &-diagram::after {
+    content: '';
+    width: 194px;
+    height: 180px;
+    background-image: url('/images/spidershiba-min.png');
+    background-size: contain;
+    z-index: 4;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+#stat {
+  &-marketing::before {
+    content: '';
+    width: 57px;
+    height: 5px;
+    position: absolute;
+    background-color: #4e00ff;
+    top: 21px;
+    left: 30px;
+  }
+
+  &-founders::before {
+    content: '';
+    height: 5px;
+    width: 15px;
+    background-color: #ff850b;
+    position: absolute;
+    top: 25px;
+    left: 30px;
+  }
+  &-founders::after {
+    content: '';
+    height: 5px;
+    width: 18px;
+    background-color: #663090;
+    position: absolute;
+    top: 25px;
+    left: 55px;
+  }
+  &-liquidity::before {
+    content: '';
+    height: 5px;
+    width: 90px;
+    background-color: #1dbee1;
+    position: absolute;
+    top: 25px;
+    left: 30px;
+  }
+  &-advisors::before {
+    content: '';
+    height: 5px;
+    width: 30px;
+    background-color: #133d81;
+    position: absolute;
+    top: 25px;
+    left: 30px;
+  }
+
+  &-p2e::before {
+    content: '';
+    height: 5px;
+    width: 45px;
+    background-color: #ff0000;
+    position: absolute;
+    top: 25px;
+    left: 30px;
+  }
+  &-nft::before {
+    content: '';
+    height: 5px;
+    width: 45px;
+    background-color: #0096f2;
+    position: absolute;
+    top: 25px;
+    left: 30px;
+  }
+}

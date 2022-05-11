@@ -1,0 +1,163 @@
+.earn {
+  &-wrapper {
+    color: $primary-white-text-color;
+  }
+
+  &-wrapper h2 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    margin-bottom: 10px;
+  }
+
+  &-wrapper span {
+    display: block;
+    text-align: center;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 42px;
+    opacity: 0.5;
+    margin-bottom: 50px;
+  }
+
+  &-history {
+    background-color: $earn-history-bgc;
+    border-radius: 30px;
+    padding: 36px 50px 60px;
+    display: flex;
+    margin-bottom: 50px;
+  }
+
+  &-tips {
+    display: flex;
+  }
+}
+
+.history {
+  &-collage {
+    display: block;
+    width: 649px;
+    height: 288px;
+    margin-right: 41px;
+    background-image: url('/images/earn-bgi-min.jpg');
+    background-size: cover;
+    border-radius: 30px;
+    position: relative;
+    z-index: 1;
+  }
+
+  //додаємо маску на фон
+  &-collage::before {
+    content: '';
+    display: block;
+    width: 649px;
+    height: 288px;
+    border-radius: 30px;
+    position: absolute;
+    background-color: $earn-history-collage-pseudo-bgc;
+    opacity: 0.4;
+    z-index: 2;
+  }
+
+  //додаємо павутину під гобліна
+  &-collage::after {
+    content: '';
+    width: 280px;
+    height: 287px;
+    display: block;
+    position: absolute;
+    background-image: url('/images/earn-web-pseudo-bg-min.png');
+    right: 0;
+    top: 0;
+    z-index: 2;
+  }
+
+  &-collage-spidershiba {
+    width: 200px;
+    height: 186px;
+    transform: rotate(-25deg);
+    position: absolute;
+    left: 30px;
+    bottom: 32px;
+    z-index: 3;
+  }
+
+  &-collage-goblin {
+    width: 200px;
+    height: 216px;
+    transform: rotate(25deg);
+    position: absolute;
+    right: 40px;
+    top: 32px;
+    z-index: 3;
+  }
+
+  &-text {
+    color: $primary-white-text-color;
+    max-width: 946px;
+  }
+  &-text h3 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 20px;
+  }
+
+  &-text p {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    opacity: 0.6;
+  }
+
+  &-text p:not(:last-child) {
+    margin-bottom: 29px;
+  }
+}
+
+.tip {
+  &-card {
+    display: flex;
+    border-radius: 30px;
+    padding: 36px 38px 35px 30px;
+  }
+
+  &-card:nth-child(odd) {
+    margin-right: 41px;
+  }
+
+  &-cash {
+    background-color: $tip-cash-bgc;
+  }
+
+  &-games {
+    background-color: $tip-games-bgc;
+  }
+
+  &-cash img {
+    width: 153px;
+    height: 160px;
+    margin-right: 30px;
+  }
+
+  &-games img {
+    width: 180px;
+    height: 160px;
+    margin-right: 30px;
+  }
+
+  &-text h3 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 20px;
+  }
+
+  &-text p {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 33px;
+    opacity: 0.8;
+  }
+}

@@ -1,0 +1,119 @@
+.invest {
+  &-background {
+    margin-top: 175px;
+    background-color: $invest-bgc;
+    overflow: hidden;
+  }
+
+  &-wrapper {
+    padding-top: 150px;
+    padding-bottom: 150px;
+    color: $primary-white-text-color;
+    display: flex;
+    position: relative;
+    z-index: 1;
+  }
+
+  &-wrapper::before {
+    content: '';
+    background-image: url('/images/earn-web-pseudo-bg-min.png');
+    background-size: contain;
+    position: absolute;
+    display: block;
+    z-index: -1;
+    height: 660px;
+    width: 644px;
+    top: 0;
+    left: 0;
+    opacity: 0.15;
+  }
+  &-about {
+    margin-top: 27px;
+    margin-right: 188px;
+  }
+
+  &-about h2 {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    margin-bottom: 20px;
+  }
+
+  &-about p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    opacity: 0.6;
+    margin-bottom: 40px;
+  }
+
+  &-about button {
+    color: $primary-white-text-color;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: $primary-red-color;
+    padding: 25px 30px;
+    transition: 250ms ease-in-out all;
+  }
+
+  &-about button:hover {
+    background-color: $primary-red-hover-color;
+  }
+
+  &-advantages {
+    max-width: 996px;
+  }
+
+  &-advantages li:not(:last-child) {
+    margin-bottom: 50px;
+  }
+
+  &-advantages li {
+    display: flex;
+    // max-width: 996px;
+  }
+}
+
+.advantage {
+  &-image-thumb {
+    min-width: 107px;
+    height: 107px;
+    display: block;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    margin-right: 21px;
+  }
+
+  &-image {
+    position: absolute;
+  }
+
+  &-text h3 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 10px;
+  }
+
+  &-text p {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    opacity: 0.8;
+  }
+}
+
+.icon {
+  &-arrow {
+    top: 25px;
+  }
+  &-star {
+    left: -25px;
+    top: 15px;
+  }
+}
