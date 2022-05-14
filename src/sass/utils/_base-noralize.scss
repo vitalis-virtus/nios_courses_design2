@@ -1,6 +1,11 @@
 body {
   font-family: 'Source Sans Pro';
   background-color: $primary-background-color;
+
+  @media screen and(max-width: $mobile){
+    margin: 0 auto;
+    max-width: 360px;
+  }
   width: 1920px;
   margin: 0 auto;
 }

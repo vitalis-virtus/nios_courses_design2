@@ -6,10 +6,16 @@
   &-wrapper {
     padding-top: 70px;
     padding-bottom: 130px;
+    @media screen and(max-width: $mobile) {
+      padding-bottom: 74px;
+    }
   }
   &-wrapper h2 {
     @extend %section-header-styles;
     margin-bottom: 66px;
+    @media screen and(max-width: $mobile) {
+      margin-bottom: 50px;
+    }
   }
 
   &-statistic {
@@ -17,6 +23,17 @@
     justify-content: space-between;
     align-items: center;
     color: $primary-white-text-color;
+    flex-direction: row;
+    @media screen and(max-width: $mobile) {
+      flex-direction: column;
+    }
+  }
+
+  &-statistic ul:first-child{
+    @media screen and(max-width: $mobile) {
+      margin-bottom: 25px;
+    }
+
   }
 
   &-statistic li {
@@ -26,6 +43,11 @@
     width: 444px;
     height: 140px;
     padding: 35px 50px 20px 30px;
+    @media screen and(max-width: $mobile) {
+      width: 100%;
+      height: auto;
+      padding: 25px 22px 21px;
+    }
   }
 
   &-statistic li:not(:last-child) {
@@ -36,6 +58,9 @@
     font-size: 27px;
     line-height: 32px;
     margin-bottom: 5px;
+    @media screen and(max-width: $mobile) {
+      margin-bottom: 10px;
+    }
   }
 
   &-statistic p {
@@ -43,6 +68,10 @@
     font-size: 20px;
     line-height: 24px;
     opacity: 0.3;
+    @media screen and(max-width: $mobile) {
+      font-size: 18px;
+      line-height: 21px;
+    }
   }
 
   &-diagram {
@@ -50,6 +79,19 @@
     z-index: 1;
     border-radius: 100%;
     transition: 200ms ease-in-out all;
+    margin: 0;
+    @media screen and(max-width: $mobile) {
+      order: -1;
+      width: 100%;
+      height: auto;
+      margin-bottom: 50px;
+    }
+  }
+  &-diagram img {
+    @media screen and(max-width: $mobile) {
+      width: 100%;
+      height: auto;
+    }
   }
 
   &-diagram:hover {
@@ -67,6 +109,10 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    @media screen and(max-width: $mobile) {
+      width: 220px;
+      height: 220px;
+    }
   }
 
   &-diagram::after {
@@ -80,6 +126,10 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    @media screen and(max-width: $mobile) {
+      width: 116px;
+      height: 107px;
+    }
   }
 }
 

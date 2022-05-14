@@ -1,20 +1,32 @@
 .works {
   &-wrapper {
+    @media screen and(max-width: $mobile) {
+      margin-top: 149px;
+      padding-bottom: 144px;
+    }
+
     color: $primary-white-text-color;
     padding-bottom: 159px;
   }
   &-header {
     @extend %section-header-styles;
+
     margin-bottom: 50px;
   }
 
   &-list {
+    @media screen and(max-width: $mobile) {
+      display: block;
+    }
     display: flex;
     max-width: 1624px;
     margin: 0 auto;
   }
 
   &-list-item-inner-thumb {
+    @media screen and(max-width: $mobile) {
+      padding: 20px 35px 40px 20px;
+    }
     padding: 30px 40px 40px 30px;
     border: none;
     border-radius: 20px;
@@ -22,14 +34,26 @@
   }
 
   &-list-item {
+    @media screen and(max-width: $mobile) {
+      max-width: 325px;
+    }
     max-width: 495px;
   }
 
   &-list-item:not(:last-child) {
+    @media screen and(max-width: $mobile) {
+      margin: 0;
+      margin-bottom: 40px;
+    }
+    margin: 0;
     margin-right: 38px;
   }
 
   &-svg-thumb-1 {
+    @media screen and(max-width: $mobile) {
+      padding: 16px;
+      margin-bottom: 20px;
+    }
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -39,6 +63,9 @@
   }
 
   &-svg-thumb-2 {
+    @media screen and(max-width: $mobile) {
+      padding: 12px;
+    }
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -47,10 +74,19 @@
   }
 
   &-svg {
+    @media screen and(max-width: $mobile) {
+      width: 23px;
+      height: 23px;
+    }
+
     width: 35px;
     height: 35px;
   }
   &-list h3 {
+    @media screen and(max-width: $mobile) {
+      font-size: 30px;
+      line-height: 36px;
+    }
     font-weight: 600;
     font-size: 35px;
     line-height: 42px;
@@ -58,6 +94,11 @@
   }
 
   &-list span {
+    @media screen and(max-width: $mobile) {
+      font-size: 15px;
+      line-height: 18px;
+      margin-bottom: 15px;
+    }
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
@@ -66,6 +107,10 @@
     opacity: 0.3;
   }
   &-list p {
+    @media screen and(max-width: $mobile) {
+      font-size: 19px;
+      line-height: 23px;
+    }
     font-weight: 500;
     font-size: 23px;
     line-height: 30px;

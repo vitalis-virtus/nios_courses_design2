@@ -2,18 +2,33 @@
   &-bg {
     background-image: url('/images/main-hero-bg-min.png');
     background-size: cover;
+    @media screen and(max-width: $mobile) {
+padding-bottom:34px;
+}
     padding-bottom: 140px;
+
   }
 
   &-wrapper {
+    @media screen and(max-width: $mobile) {
+      display: block;
+    }
     display: flex;
   }
 
   &-content {
-    margin-right: 450px;
+    @media screen and(max-width: $mobile) {
+      width: 100%;
+    }
+    margin-right: 300px;
   }
 
   &-content-header {
+    @media screen and(max-width: $mobile) {
+      font-weight: 800;
+      font-size: 50px;
+      line-height: 50px;
+    }
     font-weight: 800;
     font-size: 80px;
     line-height: 90px;
@@ -22,11 +37,21 @@
     margin-bottom: 40px;
   }
 
+  &-content-header span {
+    display: inline;
+  }
+
   &-content-header span:first-child {
     color: $primary-red-color;
   }
 
   &-content-header p {
+    @media screen and(max-width: $mobile) {
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 18px;
+      margin-top: 10px;
+    }
     font-weight: 500;
     font-size: 25px;
     line-height: 30px;
@@ -35,6 +60,12 @@
   }
 
   &-content-description {
+    @media screen and(max-width: $mobile) {
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 26px;
+      margin-bottom: 260px;
+    }
     font-weight: 400;
     font-size: 32px;
     line-height: 38px;
@@ -43,10 +74,23 @@
   }
 
   &-content-navigation-buttons {
+    @media screen and(max-width: $mobile) {
+      display: block;
+      text-align: center;
+    }
+
     display: flex;
   }
 
   &-content-navigation-buttons .join-btn {
+    @media screen and(max-width: $mobile) {
+      margin: 0 0 15px;
+      padding: 20px 70px;
+      font-weight: 700;
+      font-size: 19px;
+      line-height: 23px;
+    }
+
     background-color: $primary-red-color;
     color: $primary-white-text-color;
     font-weight: 700;
@@ -64,6 +108,12 @@
   }
 
   &-content-navigation-buttons .more-btn {
+    @media screen and(max-width: $mobile) {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 21px;
+      padding: 20px 45px;
+    }
     background-color: #ffffff0d;
     color: $primary-white-text-color;
     font-weight: 500;
@@ -80,6 +130,16 @@
   }
 
   &-image {
+    @media screen and(max-width: $mobile) {
+      width: 200px;
+      height: 185px;
+      position: absolute;
+      margin: 0;
+      top: 505px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    position: static;
     margin-right: 118px;
     margin-top: 20px;
     width: 592px;
@@ -87,14 +147,25 @@
   }
 
   &-contact-adress {
+    @media screen and(max-width: $mobile) {
+      margin: 15px 0 0 0;
+    padding: 12px 7px 13px 15px;
+
+    }
     border: 1px solid #ffffff17;
     border-radius: 10px;
     padding: 14px 35px 13px 30px;
     margin-top: 20px;
-
+    margin-right: 50px;
   }
 
   &-contact-adress p {
+    @media screen and(max-width: $mobile) {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+    }
+
     position: relative;
     font-weight: 400;
     font-size: 25px;
@@ -104,6 +175,13 @@
   }
 
   &-contact-adress h4 {
+    @media screen and(max-width: $mobile) {
+      font-weight: 500;
+      font-size: 11px;
+      line-height: 13px;
+      margin-bottom: 5px;
+    }
+    margin: 0;
     font-weight: 500;
     font-size: 15px;
     line-height: 18px;

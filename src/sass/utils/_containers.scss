@@ -1,7 +1,15 @@
 .container {
   padding: 0 92px;
 
+  @media screen and(max-width: $mobile) {
+    padding: 0 15px;
+  }
+
   &-team-partners {
     padding: 70px 179px 140px;
+    @media screen and(max-width: $mobile) {
+padding: 0;
+padding-top: 70px;
+    }
   }
 }

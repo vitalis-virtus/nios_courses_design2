@@ -2,6 +2,11 @@
   &-wrapper {
     margin-top: 70px;
     padding-bottom: 130px;
+    @media screen and(max-width: $mobile) {
+      margin-top: 145px;
+      padding-left: 2px;
+      padding-right: 2px;
+    }
   }
 
   &-wrapper h2 {
@@ -14,6 +19,10 @@
     justify-content: center;
     align-items: center;
     padding: 0 57px;
+    @media screen and(max-width: $mobile) {
+      display: block;
+      padding: 0;
+    }
   }
 
   &-periods {
@@ -21,6 +30,9 @@
     justify-content: space-between;
     flex-wrap: wrap;
     position: relative;
+    @media screen and(max-width: $mobile) {
+      display: block;
+    }
   }
 
   &-periods::before {
@@ -31,6 +43,12 @@
     position: absolute;
     right: 50%;
     top: 110px;
+    @media screen and(max-width: $mobile) {
+      height: 77.5%;
+      right: auto;
+      left: 0;
+      top: 83px;
+    }
   }
 
   &-periods::after {
@@ -41,6 +59,12 @@
     position: absolute;
     right: 50%;
     top: 110px;
+    @media screen and(max-width: $mobile) {
+      right: auto;
+      left: 0;
+      top: 83px;
+      height: 15.5%;
+    }
   }
 
   &-period {
@@ -53,14 +77,26 @@
     margin-bottom: 60px;
     padding: 35px 30px;
     opacity: 0.7;
+    @media screen and(max-width: $mobile) {
+      display: block;
+      margin: 0;
+      padding: 35px 35px 50px;
+      width: 100%;
+      margin-bottom: 20px;
+      background-color: rgba(56, 77, 112, 0.2);
+    }
   }
 
   &-period-active {
+    background-color: rgba(56, 76, 112, 0.616);
     opacity: 1;
   }
 
   &-period:nth-child(even) {
     margin-left: 832px;
+    @media screen and(max-width: $mobile) {
+      margin-left: 0;
+    }
   }
   &-period:last-child {
     margin-bottom: 0;
@@ -71,21 +107,35 @@
   &-period-disabled:nth-child(even):before {
     @extend %pseudo-red-dot-disabled;
     left: -29px;
+    @media screen and(max-width: $mobile) {
+left: -4px;
+    }
   }
 
   &-period-disabled:nth-child(odd)::after {
     @extend %pseudo-red-dot-disabled;
     right: -27px;
+    @media screen and(max-width: $mobile) {
+      right: auto;
+      left: -4px;
+    }
   }
 
   &-period-active:nth-child(odd):after {
     @extend %pseudo-white-dot-active;
     right: -26px;
+    @media screen and(max-width: $mobile) {
+      right: auto;
+      left: -4px;
+    }
   }
 
   &-period-active:nth-child(even):before {
     @extend %pseudo-white-dot-active;
     left: -29px;
+    @media screen and(max-width: $mobile) {
+      left: -4px;
+    }
   }
 }
 
@@ -96,6 +146,9 @@
     font-size: 30px;
     line-height: 36px;
     margin-bottom: 20px;
+    @media screen and(max-width: $mobile) {
+      margin-bottom: 10px;
+    }
   }
 
   &-number {
@@ -112,6 +165,12 @@
     border-radius: 30px;
     background: hsla(0, 0%, 100%, 0.1);
     margin-right: 30px;
+    @media screen and(max-width: $mobile) {
+      margin: 0;
+      width: 97px;
+      height: 100px;
+      margin-bottom: 30px;
+    }
   }
 
   &-text ul {
@@ -125,6 +184,10 @@
     line-height: 30px;
     position: relative;
     margin-left: 15px;
+    @media screen and(max-width: $mobile) {
+      font-size: 21px;
+      line-height: 25px;
+    }
   }
 
   //стилізація точок списка
@@ -149,7 +212,7 @@
   &-text-checkmark::after {
     content: '✓';
     color: #d1d1d1;
-    font-size: 25px;
+    font-size: 21px;
     font-weight: 800;
     display: flex;
     align-items: center;
@@ -161,5 +224,13 @@
     position: absolute;
     top: 0;
     right: -45px;
+
+    @media screen and(max-width: $mobile) {
+      width: 25px;
+      height: 25px;
+      right: -30px;
+      top: auto;
+      bottom: 0;
+    }
   }
 }
