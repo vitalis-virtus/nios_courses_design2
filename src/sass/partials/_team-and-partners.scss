@@ -6,11 +6,18 @@
   &-wrapper {
     text-align: center;
     margin-bottom: 80px;
+    @media screen and(max-width: $mobile) {
+      margin-bottom: 46px;
+    }
+
   }
 
   &-wrapper h2 {
     @extend %section-header-styles;
     margin-bottom: 60px;
+    @media screen and(max-width: $mobile) {
+      margin-bottom: 50px;
+    }
   }
 
   &-slider {
@@ -22,17 +29,31 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 50px;
+    @media screen and(max-width: $mobile) {
+      display: none;
+      margin-bottom: 30px;
+    }
   }
 
   &-list img {
     border-radius: 30px;
     margin-bottom: 20px;
+    @media screen and(max-width: $mobile) {
+      width: 280px;
+      height: 270px;
+    }
   }
 
   &-list h4 {
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
+    @media screen and(max-width: $mobile) {
+    font-size: 27px;
+    line-height: 32px;
+    margin-bottom: 10px;
+    }
+
   }
 
   &-list p {
@@ -40,6 +61,11 @@
     font-size: 22px;
     line-height: 26px;
     opacity: 0.6;
+    @media screen and(max-width: $mobile) {
+    font-size: 18px;
+    line-height: 21px;
+    }
+
   }
 
   &-slider-nav button {
@@ -62,20 +88,58 @@
   &-wrapper h2 {
     @extend %section-header-styles;
     margin-bottom: 40px;
+    @media screen and(max-width: $mobile) {
+      margin-bottom: 11px;
+    }
+
   }
 
   &-list {
     display: flex;
     justify-content: space-between;
+    flex-wrap: nowrap;
+    @media screen and(max-width: $mobile) {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
   }
 
   &-list li {
-      border-radius:50px ;
-      transition: 150ms ease-in all;
+    border-radius: 50px;
+    transition: 150ms ease-in all;
+    height: 75px;
+    @media screen and(max-width: $mobile) {
+      height: 32px;
+      margin-top: 15px;
+    }
+
   }
+  &-list li:not(:last-child) {
+    margin-right: 20px;
+    @media screen and(max-width: $mobile) {
+      margin-right: 5px;
+    }
+
+  }
+
+   &-list img {
+
+      height: 100%;
+      width: auto;
+
+   }
+
 
   &-list li:hover {
     box-shadow: 0px 5px 16px 20px rgba(255, 255, 255, 0.2);
-
   }
+}
+
+.d-block-mobile {
+  display: none;
+  @media screen and(max-width: $mobile) {
+    display: block;
+  }
+
 }

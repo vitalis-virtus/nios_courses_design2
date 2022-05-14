@@ -3,6 +3,9 @@
     margin-top: 175px;
     background-color: $invest-bgc;
     overflow: hidden;
+    @media screen and(max-width: $mobile) {
+      display: none;
+    }
   }
 
   &-wrapper {

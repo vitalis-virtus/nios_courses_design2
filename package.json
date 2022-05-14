@@ -6,7 +6,9 @@
   "homepage": "https://vitalis-virtus.github.io/nios_courses_design2",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /nios_courses_design2/"
+    "build": "parcel build src/index.html --public-url /nios_courses_design2",
+    "deploy": "gh-pages -d dist",
+    "predeploy": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -24,6 +26,9 @@
     "parcel-plugin-handlebars-precompile": "^1.0.2",
     "parcel-plugin-nuke-dist": "^1.0.1",
     "posthtml-include": "^1.6.2",
-    "sass": "^1.32.8"
+    "sass": "^1.32.8",
+    "gh-pages": "^4.0.0"
+  },
+  "dependencies": {
   }
 }

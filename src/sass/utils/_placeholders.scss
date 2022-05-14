@@ -8,6 +8,10 @@
   background-color: #ff0000;
   position: absolute;
   top: 50%;
+  @media screen and(max-width: $mobile) {
+    top: 80px;
+
+  }
 }
 
 %pseudo-white-dot-active {
@@ -19,10 +23,19 @@
   background-color: #ffffff;
   position: absolute;
   top: 50%;
+  @media screen and(max-width: $mobile) {
+    top: 80px;
+  }
 }
 
 //основний стиль для текста заголвків в секціях
 %section-header-styles {
+  @media screen and(max-width: $mobile) {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+  }
   font-weight: 700;
   font-size: 50px;
   line-height: 60px;

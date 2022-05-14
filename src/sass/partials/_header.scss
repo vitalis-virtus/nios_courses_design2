@@ -1,5 +1,9 @@
 .header {
   &-wrapper {
+    @media screen and(max-width: $mobile) {
+      padding: 37px 0;
+      margin-bottom: 13px;
+    }
     padding: 10px 0;
     display: flex;
     justify-content: space-between;
@@ -32,6 +36,11 @@
   display: flex;
   align-items: center;
   cursor: pointer;
+  @media screen and(max-width: $mobile) {
+    margin: 0;
+    width: 155px;
+    display: inline-flex;
+  }
   margin-right: 180px;
   position: relative;
 
@@ -40,6 +49,11 @@
   }
 
   &-img-thumb {
+    @media screen and(max-width: $mobile) {
+      padding: 3.5px;
+      border-radius: 5px;
+      margin-right: 10px;
+    }
     padding: 7px;
     background-color: $primary-red-color;
     border-radius: 15px;
@@ -47,10 +61,21 @@
     transition: 250ms ease-in-out all;
   }
   &-img {
+    @media screen and(max-width: $mobile) {
+      width: 18px;
+      height: 18px;
+    }
     width: 35px;
     height: 36px;
   }
   & span {
+    @media screen and(max-width: $mobile) {
+      display: inline;
+      font-weight: 800;
+      font-size: 15px;
+      line-height: 20px;
+    }
+
     font-family: 'Nunito';
     display: block;
     font-weight: 800;
